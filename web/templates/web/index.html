@@ -1,0 +1,306 @@
+{% extends 'web/main.html' %}
+{% load static %}
+{% block title_page %}
+  <title>Главная страница</title>
+{% endblock title_page %}
+{% block content %}
+	<header class="header" id="header">
+		<!--header-start-->
+		<div class="container">
+			<figure class="logo animated fadeInDown delay-07s">
+				<a href="#"><img src="{% static 'img/logo123.png' %}" alt=""></a>
+			</figure>
+			<h1 class="animated fadeInDown delay-07s">Добро пожаловать на сайт нашего магазина</h1>
+			<ul class="we-create animated fadeInUp delay-1s">
+				<li>Мы продаем быстро и качественно</li>
+			</ul>
+			<a class="link animated fadeInUp delay-1s servicelink" href="#service">Начнем</a>
+		</div>
+	</header>
+	<!--header-end-->
+
+	<nav class="main-nav-outer" id="test">
+		<!--main-nav-start-->
+		<div class="container">
+			<ul class="main-nav">
+				<li><a href="{% url 'home' %}">Главная</a></li>
+				<li><a href="#service">Сервис</a></li>
+				<li><a href="{% url 'shop' %}">Магазин</a></li>
+				<li class="small-logo"><a href="#header"><img src="img/small-logo123.png" alt=""></a></li>
+				<li><a href="#client">Клиенты</a></li>
+				<li><a href="#team">Команда</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+	<!--main-nav-end-->
+
+
+	<section class="main-section" id="service">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>Категории</h2>
+			<h6>У нас большое разнообразие товаров</h6>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-paw"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>Смартфоны</h3>
+							<p>Mobile</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-gear"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>Ноутбуки</h3>
+							<p>Notebook</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-apple"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>Компьютеры</h3>
+							<p>PC</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-medkit"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>Аксессуары</h3>
+							<p>Akseir</p>
+						</div>
+					</div>
+				</div>
+				<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+					<img src="{% static 'img/macbook-pro.png' %}" alt="">
+				</figure>
+
+			</div>
+		</div>
+	</section>
+	<!--main-section-end-->
+
+
+
+	<section class="main-section alabaster">
+		<!--main-section alabaster-start-->
+		<div class="container">
+			<div class="row">
+				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+					<img src="{% static 'img/iphone.png' %}" alt="">
+				</figure>
+				<div class="col-lg-7 col-sm-8 featured-work">
+					<h2>Наши плюсы</h2>
+					<P class="padding-b">Мы убеждены, плюсы компании определяються ее отношением к клиенту, именно поэтому мы ценим всех покупателей!</P>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-02s">
+							<i class="fa fa-magic"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-06s">
+							<h3>Высокое качество</h3>
+							<p>Все товари надежно храняться и проходят  проверку качества</p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-04s">
+							<i class="fa fa-gift"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-04s">
+							<h3>Бонусы</h3>
+							<p>Система бонусов, крайне важна для поддрежки покупателей, и именно поэтому мы постоянно развиваем это направление </p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-06s">
+							<i class="fa fa-dashboard"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-06s">
+							<h3>Быстрая доставка</h3>
+							<p>Доставка происходит невроятно быстро!Опозданий и задержек просто не бывает </p>
+						</div>
+					</div>
+					<a class="Learn-More" href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--main-section alabaster-end-->
+
+	
+
+	<section class="main-section client-part" id="client">
+		<!--main-section client-part-start-->
+		<div class="container">
+			<b class="quote-right wow fadeInDown delay-03"><i class="fa fa-quote-right"></i></b>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="client-part-haead wow fadeInDown delay-05">У нашего магазина всего 3 принципа:Качество, Скорость и Поддержка!</p>
+				</div>
+			</div>
+			<ul class="client wow fadeIn delay-05s">
+				<li><a href="#">
+            	<img src="{% static 'img/client-pic1.jpg' %}" alt="">
+                <h3>Артем Мирчман</h3>
+                <span>Глава компании.</span>
+            </a></li>
+			</ul>
+		</div>
+	</section>
+	<!--main-section client-part-end-->
+	<div class="c-logo-part">
+		<!--c-logo-part-start-->
+		<div class="container">
+			<ul>
+				<li><a href="#"><img src="{% static 'img/c-liogo1.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo2.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo3.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo4.png' %}" alt=""></a></li>
+				<li><a href="#"><img src="{% static 'img/c-liogo5.png' %}" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--c-logo-part-end-->
+	<section class="main-section team" id="team">
+		<!--main-section team-start-->
+		<div class="container">
+			<h2>Команда</h2>
+			<h6>Вместе мы сильнее!</h6>
+			<div class="team-leader-block clearfix">
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-03s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static 'img/team-leader-pic1.jpg' %}" alt="">
+						<ul>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-pinterest"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-03s">Максим Цацкий</h3>
+					<span class="wow fadeInDown delay-03s">Генеральный менеджер</span>
+					<p class="wow fadeInDown delay-03s">Работать в этой компании, честь для меня</p>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader  wow fadeInDown delay-06s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+					<img src="{% static 'img/team-leader-pic2.jpg' %}" alt="">
+						<ul>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-pinterest"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-06s">Василий Жолудев</h3>
+					<span class="wow fadeInDown delay-06s">Логист компании</span>
+					<p class="wow fadeInDown delay-06s">Мне правда нравиться это место!Здесь приятный колектив и отвественные сотрудники</p>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-09s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static 'img/team-leader-pic3.jpg' %}" alt="">
+						<ul>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-pinterest"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-09s">Анастасия Пыжнова</h3>
+					<span class="wow fadeInDown delay-09s">Помощник управлющего компанией</span>
+					<p class="wow fadeInDown delay-09s">Это место практически изменило мою жизнь..я правда благодарна всем кто причастен к этому проекту </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--main-section team-end-->
+
+
+
+	<section class="business-talking">
+		<!--business-talking-start-->
+		<div class="container">
+			<h2>Контактная информация</h2>
+		</div>
+	</section>
+	<!--business-talking-end-->
+	<div class="container">
+		<section class="main-section contact" id="contact">
+
+			<div class="row">
+				<div class="col-lg-6 col-sm-7 wow fadeInLeft">
+					<div class="contact-info-box address clearfix">
+						<h3><i class=" icon-map-marker"></i>Адресс  главного офиса:</h3>
+						<span>Киевская-24А<br>Киев</span>
+					</div>
+					<div class="contact-info-box phone clearfix">
+						<h3><i class="fa fa-phone"></i>Phone:</h3>
+						<span>1-800-BOO-YAHH</span>
+					</div>
+					<div class="contact-info-box email clearfix">
+						<h3><i class="fa fa-pencil"></i>email:</h3>
+						<span>Shop@studios.com</span>
+					</div>
+					<div class="contact-info-box hours clearfix">
+						<h3><i class="fa fa-clock-o"></i>Время работы:</h3>
+						<span><strong>Понедельник - Четверг:</strong> 8:00 - 21:00<br><strong>Пятница:</strong> 10:00 - 18:00<br><strong>Субота - Воскрсесенье:</strong> 10:00 - 18:00</span>
+					</div>
+					<ul class="social-link">
+						<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+					<div class="form">
+
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+								<div class="validation"></div>
+							</div>
+
+							<div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-logo"><a href="#"><img src="{% static 'img/67.png' %}" alt=""></a></div>
+			<span class="copyright">&copy; Shop theme</span>
+			<div class="credits">				
+				Designed by <a href="https://shop.com/">Shopsmade</a>
+			</div>
+		</div>
+	</footer>	
+  {% endblock content %}

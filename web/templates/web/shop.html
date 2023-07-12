@@ -1,0 +1,93 @@
+{% extends 'web/main.html' %}
+{% load static %}
+{% block title_page %}
+  <title>Магазин</title>
+{% endblock title_page %}
+{% block content %}
+<section class="main-section paddind" id="Portfolio">
+    <!--main-section-start-->
+    <div class="container">
+        <h2>Магазин</h2>
+        <h6>У нас большой асортимент товаров</h6>
+        <div class="portfolioFilter">
+            <ul class="Portfolio-nav wow fadeIn delay-02s">
+                <li><a href="#" data-filter="*" class="current">Все</a></li>
+                <li><a href="#" data-filter=".branding">Смартфоны</a></li>
+                <li><a href="#" data-filter=".webdesign">Ноутбуки</a></li>
+                <li><a href="#" data-filter=".printdesign">Компьютеры</a></li>
+                <li><a href="#" data-filter=".photography">Аксессуары</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="portfolioContainer wow fadeInUp delay-04s">
+        <div class=" Portfolio-box printdesign">
+            <a href="img/56.jpg"><img src="{% static 'img/56.jpg' %}" alt=""></a>
+            <h3>Системный блок Cobra Optimal</h3>
+            <p>Цена:7000</p>
+        </div>
+        <div class=" Portfolio-box printdesign">
+            <a href="img/500.jpg"><img src="{% static 'img/500.jpg' %}" alt=""></a>
+            <h3>Системний блок Expert PC Ultimate</h3>
+            <p>Цена: 28500</p>
+        </div>
+        <div class=" Portfolio-box printdesign">
+            <a href="img/600.jpg"><img src="{% static 'img/600.jpg' %}" alt=""></a>
+            <h3>Системний блок Lenovo Legion T5 i5-11400F</h3>
+            <p>Цена: 15000</p>
+        </div>
+        <div class=" Portfolio-box printdesign">
+            <a href="img/700.jpg"><img src="{% static 'img/700.jpg' %}" alt=""></a>
+            <h3>Компьютер-моноблок Apple New iMac 24</h3>
+            <p>Цена: 70000</p>
+        </div>
+        <div class="Portfolio-box webdesign">
+            <a href="img/4000.jpg"><img src="{% static 'img/4000.jpg' %}" alt=""></a>
+            <h3>Ноутбук Lenovo ThinkBook 15 G3 ACL</h3>
+            <p>Цена:23000</p>        
+        </div>
+        <div class="Portfolio-box23 webdesign">
+            <a href="img/1000.jpg"><img src="{% static 'img/1000.jpg' %}" alt=""></a>
+            <h3>Ноутбук Apple MacBook Air 13</h3>
+            <p>Цена: 40000</p>        
+        </div>
+        <div class="Portfolio-box23 webdesign">
+            <a href="img/2000.jpg"><img src="{% static 'img/2000.jpg' %}" alt=""></a>
+            <h3>Ноутбук Acer Nitro 5</h3>
+            <p>Цена: 28000</p>        
+        </div>
+        <div class="Portfolio-box23 webdesign">
+            <a href="img/3000.jpg"><img src="{% static 'img/3000.jpg' %}" alt=""></a>
+            <h3>Ноутбук Asus X515EA-EJ1414</h3>
+            <p>Цена: 12000</p>        
+        </div>
+        {% for post in pr %}
+        <div class=" Portfolio-box branding">
+            <a href="img/Portfolio-pic3.jpg"><img src="{{ post.img.url }}" alt=""></a>
+            <h3>{{ post.name }}</h3>
+            <p>Цена: {{ post.price }}</p>
+        </div>
+        {% endfor %}
+        <div class=" Portfolio-box photography">
+            <a href="img/140.jpg"><img src="{% static 'img/140.jpg' %}" alt=""></a>
+            <h3>Маршрутизатор TP-Link ARCHER A64</h3>
+            <p>Цена:1340</p>
+        </div>
+        <div class=" Portfolio-box photography">
+            <a href="img/170.jpg"><img src="{% static 'img/170.jpg' %}" alt=""></a>
+            <h3>Наушники GamePro HS311</h3>
+            <p>Цена:290</p>
+        </div>
+        <div class=" Portfolio-box photography">
+            <a href="img/180.jpg"><img src="{% static 'img/180.jpg' %}" alt=""></a>
+            <h3>Powerbank Promate Bolt-20</h3>
+            <p>Цена:900</p>
+        </div>
+        <div class=" Portfolio-box photography">
+            <a href="img/190.jpg"><img src="{% static 'img/190.jpg' %}" alt=""></a>
+            <h3>Клавиатура проводная MOTOSPEED K82</h3>
+            <p>Цена:1700</p>
+        </div>
+    </div>
+</section>
+{% endblock content %}
